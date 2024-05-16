@@ -15,28 +15,37 @@ export interface PostProps {
 function Timeline() {
   const [posts, setPosts] = useState([
     {
-      user: "lawsonbg",
+      user: "shelbyarmor",
       image_url:
-        "https://i0.wp.com/bdn-data.s3.amazonaws.com/uploads/2024/05/image_50331649-scaled.jpg?w=2560&ssl=1",
-      image_alt: "Northern Lights in North Anson, Maine",
-      likes: 12,
-      timestamp: "2d",
+        "https://images-prod.anothermag.com/2320/azure/another-prod/360/0/360377.jpg",
+      image_alt: "Midcentury modern Architecture in Palm Springs, California",
+      likes: 272,
+      timestamp: "1hr",
     },
     {
-      user: "choyt",
+      user: "sydneyarmor",
       image_url:
-        "https://hips.hearstapps.com/hmg-prod/images/young-woman-running-training-in-the-city-royalty-free-image-1628789211.jpg",
-      image_alt: "woman running",
-      likes: 134,
-      timestamp: "12h",
+        "https://images.ctfassets.net/r7p9m4b1iqbp/1HIXQ8KtpBvkuwp7G3piLG/f5791917fdfe45b9ccc98926e0b9c6f6/Stephen-Dagley-Austria-Hut-Hiking-Fieldmag-10.jpg?w=1000",
+      image_alt: "Austrian Alps",
+      likes: 86,
+      timestamp: "7h",
     },
     {
-      user: "felipe",
+      user: "johnarmor",
       image_url:
-        "https://www.oliviascuisine.com/wp-content/uploads/2015/05/brazilian-cheese-roll-hero.jpg",
-      image_alt: "Brazilian cheese bread",
+        "https://designwanted.com/wp-content/uploads/2022/02/Natuzzi-14-scaled.jpg",
+      image_alt: "Natuzzi Living Room",
       likes: 1234,
-      timestamp: "1d",
+      timestamp: "12hr",
+    },
+
+    {
+      user: "mariokoppe",
+      image_url:
+        "https://i.pinimg.com/originals/a6/2b/46/a62b4654de0ad6111f3a02d8ad5a0226.png",
+      image_alt: "Man Mountain Biking",
+      likes: 104,
+      timestamp: "2d",
     },
   ]);
 
