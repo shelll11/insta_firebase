@@ -77,6 +77,13 @@ function Sidenav() {
           </div>
           <span>Create</span>
         </button>
+
+        <button className="sidenav__button">
+          <div className="sidenav__icon-wrapper">
+            <CreateIcon className="material-icons the-icon" />
+          </div>
+          <span>Create</span>
+        </button>
       </div>
 
       <div className="sidenav__more-container">

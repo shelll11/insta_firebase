@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import "./Signup.css"; /* get rid of after tailwind */
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updateProfile,
+} from "firebase/auth";
+import { auth } from "../firebase";
 
 import "../../css/style.css";
 
@@ -7,6 +13,18 @@ function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
+
+  const handleSignup = () => {
+    createUserWithEmailAndPassword(auth, email, password)
+      .then(
+        signInWithEmailAndPassword(auth, email, password).then(
+          updateProfile(auth.currentUser, { displayName: username })
+        )
+      )
+      .catch((err) => {
+        alert(err);
+      });
+  };
 
   return (
     <div className="signup">
